@@ -2,7 +2,7 @@ function divElementEnostavniTekst(sporocilo) {
   var jeSmesko = sporocilo.indexOf('http://sandbox.lavbic.net/teaching/OIS/gradivo/') > -1;
   var jeSlika = sporocilo.indexOf('<img src=') > -1;
   var jeVideo = sporocilo.indexOf('<img src=') > -1;
-  if (jeSmesko || jeSlika || je Video) 
+  if (jeSmesko || jeSlika || jeVideo) 
   {
     return $('<div style="font-weight: bold"></div>').html(sporocilo);
   }
